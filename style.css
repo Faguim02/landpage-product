@@ -1,0 +1,116 @@
+body{
+    background-color: hsl(234, 29%, 20%);
+    font-family: sans-serif;
+    color: hsl(234, 29%, 20%);
+    display: flex;
+    justify-content: center;
+}
+main{
+    background-color: #FFF;
+    padding: 10px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 800px;
+}
+figure{
+    margin: 0;
+    padding: 0;
+}
+article{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    height: 100%;
+    justify-content: space-evenly;
+}
+#Title{
+    color: hsl(234, 29%, 20%);
+    font-size: 28pt;
+    margin: 0;
+}
+.textDescription{
+    margin: 0;
+    margin-bottom: 5px;
+}
+.aboutInfo{
+    margin: 0;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+.aboutInfo img{
+    margin-right: 5px;
+}
+
+form{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 100%;
+}
+#TextInput{
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: hsl(234, 29%, 20%);
+}
+#Input{
+    width: 96%;
+    margin-bottom: 15px;
+    height: 50px;
+    font-size: 16pt;
+    padding-left: 5px;
+    padding-right: 5px;
+    outline: 0;
+    border-radius: 7px;
+    border: 1px solid hsl(231, 7%, 60%);
+}
+.button{
+    height: 50px;
+    width: 100%;
+    background-color: hsl(234, 29%, 20%);
+    color: #FFF;
+    font-weight: bold;
+    border: 0;
+    outline: 0;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.button:hover{
+    width: 90%;
+    margin-left: 15px;
+    background-color: hsl(268, 29%, 20%);
+}
+
+@media screen and (max-width: 765px) {
+    body{
+        padding: 0;
+        margin: 0;
+    }
+    main{
+        flex-direction: column-reverse;
+        width: 100%;
+        margin: 0;
+        border-radius: 0;
+        padding: 0;
+    }
+    figure img{
+        display: none;
+    }
+    figure{
+        width: 100%;
+        height: 400px;
+        background-image: url(./assets/images/illustration-sign-up-mobile.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        border-radius: 0 0 20px 20px;
+    }
+    article{
+        padding: 10px;
+    }
+}
